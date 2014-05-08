@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="simplegui_2.10"
+		revision="0.1-SNAPSHOT"
+		conf="runtime-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20140507142557"/>
+	<dependencies>
+		<module organisation="postgresql" name="postgresql">
+			<revision name="9.1-901-1.jdbc4" status="release" pubdate="20111219075532" resolver="public" artresolver="public" homepage="http://jdbc.postgresql.org" downloaded="true" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="2">
+				<license name="BSD License" url="http://jdbc.postgresql.org/license.html"/>
+				<metadata-artifact status="successful" details="" size="1064" time="1000" location="C:\Documents and Settings\bazarsadaevs.FSSPBUR\.ivy2\cache\postgresql\postgresql\ivy-9.1-901-1.jdbc4.xml" searched="true" original-local-location="C:\Documents and Settings\bazarsadaevs.FSSPBUR\.ivy2\cache\postgresql\postgresql\ivy-9.1-901-1.jdbc4.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.pom"/>
+				<caller organisation="default" name="simplegui_2.10" conf="optional, compile, runtime, runtime-internal" rev="9.1-901-1.jdbc4" rev-constraint-default="9.1-901-1.jdbc4" rev-constraint-dynamic="9.1-901-1.jdbc4" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="postgresql" type="jar" ext="jar" status="successful" details="" size="551290" time="2750" location="C:\Documents and Settings\bazarsadaevs.FSSPBUR\.ivy2\cache\postgresql\postgresql\jars\postgresql-9.1-901-1.jdbc4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-actors">
+			<revision name="2.10.3" status="release" pubdate="20130927174620" resolver="public" artresolver="public" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.3/" downloaded="true" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="1">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html
+         "/>
+				<metadata-artifact status="successful" details="" size="1961" time="1031" location="C:\Documents and Settings\bazarsadaevs.FSSPBUR\.ivy2\cache\org.scala-lang\scala-actors\ivy-2.10.3.xml" searched="true" original-local-location="C:\Documents and Settings\bazarsadaevs.FSSPBUR\.ivy2\cache\org.scala-lang\scala-actors\ivy-2.10.3.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.3/scala-actors-2.10.3.pom"/>
+				<caller organisation="default" name="simplegui_2.10" conf="optional, compile, runtime, runtime-internal" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.3" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scala-actors" type="jar" ext="jar" status="no" details="" size="477029" time="0" location="C:\Documents and Settings\bazarsadaevs.FSSPBUR\.ivy2\cache\org.scala-lang\scala-actors\jars\scala-actors-2.10.3.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.3/scala-actors-2.10.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.10.3" status="release" pubdate="20130927174454" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.3/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, master(*), compile(*), runtime, runtime(*), master" position="0">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2517" time="0" location="C:\Documents and Settings\bazarsadaevs.FSSPBUR\.ivy2\cache\org.scala-lang\scala-library\ivy-2.10.3.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.3/scala-library-2.10.3.pom"/>
+				<caller organisation="default" name="simplegui_2.10" conf="optional, compile, runtime, runtime-internal" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.3" callerrev="0.1-SNAPSHOT"/>
+				<caller organisation="org.scala-lang" name="scala-actors" conf="default, compile, runtime, master" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.3" callerrev="2.10.3"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="7126003" time="0" location="C:\Documents and Settings\bazarsadaevs.FSSPBUR\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.10.3.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
