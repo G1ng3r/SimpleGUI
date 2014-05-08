@@ -14,6 +14,7 @@ import javax.swing.table.AbstractTableModel
 import javax.swing.Timer
 import java.awt.event.ActionListener
 import javax.swing.DefaultListSelectionModel
+import ru.sayn.simple_gui.tables._
 
 object AdminGui extends SwingApplication {
   
@@ -26,11 +27,18 @@ object AdminGui extends SwingApplication {
       maximize
       menuBar = new MyMenu
       visible = true
+      override def closeOperation() { sys.exit(0) }
     }
   }
   
-  lazy val ui = new BoxPanel(Orientation.Vertical) {
-    
+  lazy val ui = new SplitPane(Orientation.Vertical) {
+    val right = new BoxPanel(Orientation.Horizontal) {
+      contents += new ShootWomenTable()
+      contents += new ShootMenTable()
+      contents += new ShootNRunTable()
+      contents += new Shoot2MenTable()
+    }
+    val left = new ScrollPane()
   }
   
   def setSystemLookAndFeel() {
