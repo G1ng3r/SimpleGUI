@@ -15,8 +15,8 @@ import javax.swing.Timer
 import java.awt.event.ActionListener
 import javax.swing.DefaultListSelectionModel
 import ru.sayn.simple_gui.table_model.Participants
-import ru.sayn.simple_gui.table_model.RowSetTableModel
 import ru.sayn.simple_gui.table_model.Disciplines
+import ru.sayn.simple_gui.table_model.RowSetTableModel
 
 object SimpleGui extends SimpleSwingApplication {
   

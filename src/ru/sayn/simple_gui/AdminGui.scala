@@ -15,6 +15,9 @@ import javax.swing.Timer
 import java.awt.event.ActionListener
 import javax.swing.DefaultListSelectionModel
 import ru.sayn.simple_gui.tables._
+import ru.sayn.simple_gui.table.ShootMenTable
+import ru.sayn.simple_gui.table.Shoot2MenTable
+import ru.sayn.simple_gui.table.ShootNRunTable
 
 object AdminGui extends SwingApplication {
   
@@ -29,6 +32,12 @@ object AdminGui extends SwingApplication {
       visible = true
       override def closeOperation() { sys.exit(0) }
     }
+  }
+  
+  def rowset = new JdbcRowSetImpl() {
+    setUsername("admin")
+    setPassword("123456")
+    setUrl("jdbc:postgresql://10.3.4.50/postgres")
   }
   
   lazy val ui = new SplitPane(Orientation.Vertical) {

@@ -1,7 +1,7 @@
 package ru.sayn.simple_gui.table
 
-import scala.swing.Table
+import javax.sql.RowSet
 
-class ShootMenTable extends Table {
+class ShootMenTable(rowset: RowSet) extends RowSetTable(rowset) {
 
 }
