@@ -14,7 +14,6 @@ import javax.swing.table.AbstractTableModel
 import javax.swing.Timer
 import java.awt.event.ActionListener
 import javax.swing.DefaultListSelectionModel
-import javax.swing.JDesktopPane
 
 object AdminGui extends SwingApplication {
   
@@ -25,19 +24,8 @@ object AdminGui extends SwingApplication {
       title = "Админстратор"
       contents = ui
       maximize
-      menuBar = menu
+      menuBar = new MyMenu
       visible = true
-    }
-  }
-  
-  lazy val menu = new MenuBar {
-    contents += new Menu("File") {
-      contents += new MenuItem(Action("Exit") {
-        sys.exit(0)
-      })
-      contents += new MenuItem(Action("Add participant") {
-        
-      })
     }
   }
   
