@@ -1,3 +1,51 @@
 reload
 update
 eclipse
+update
+update-classifiers
+eclipse
+exit
+run
+run-main ru.sayn.simple_gui.AdminGui
+reload
+update
+run
+run -encoding CP1251
+run
+reload
+update
+compile
+reload
+compile
+baseDirectory
+scalaSource
+reload
+scalaSource
+compile
+reload
+scalaSource
+sourceDirectory
+compile
+reload
+compile
+scalaSource
+run
+run-main ru.sayn.simple_gui.AdminGui
+compile
+reload
+compile
+run-main ru.sayn.simple_gui.AdminGui
+reload
+compile
+unmanagedBase
+reload
+update
+reload
+compile
+scala-version
+reload
+update
+run
+eclipse
+run
+exit

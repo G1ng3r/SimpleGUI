@@ -1,0 +1,89 @@
+[0m[[0minfo[0m] [0mRunning ru.sayn.simple_gui.SimpleGui [0m
+[0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main-4 to terminate.[0m
+[0m[[0mdebug[0m] [0m  Classpath:[0m
+[0m[[0mdebug[0m] [0m	C:\workspace\scala\SimpleGUI\target\scala-2.10\classes[0m
+[0m[[0mdebug[0m] [0m	C:\Users\root\.sbt\boot\scala-2.10.3\lib\scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\root\.ivy2\cache\org.scala-lang\scala-actors\jars\scala-actors-2.10.3.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\root\.ivy2\cache\postgresql\postgresql\jars\postgresql-9.1-901-1.jdbc4.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\root\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\root\.ivy2\cache\org.scala-lang\scala-swing\jars\scala-swing-2.10.3.jar[0m
+[0m[[0mdebug[0m] [0m	Thread run-main-4 exited.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread AWT-EventQueue-0 to terminate.[0m
+[0m[[31merror[0m] [0m(AWT-EventQueue-0) java.util.MissingResourceException: Can't find bundle for base name com/sun/rowset/RowSetResourceBundle, locale ru_RU[0m
+java.util.MissingResourceException: Can't find bundle for base name com/sun/rowset/RowSetResourceBundle, locale ru_RU
+	at java.util.ResourceBundle.throwMissingResourceException(ResourceBundle.java:1427)
+	at java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1250)
+	at java.util.ResourceBundle.getBundle(ResourceBundle.java:952)
+	at com.sun.rowset.JdbcRowSetResourceBundle.<init>(JdbcRowSetResourceBundle.java:88)
+	at com.sun.rowset.JdbcRowSetResourceBundle.getJdbcRowSetResourceBundle(JdbcRowSetResourceBundle.java:107)
+	at com.sun.rowset.JdbcRowSetImpl.<init>(JdbcRowSetImpl.java:125)
+	at ru.sayn.simple_gui.SimpleGui$$anon$5.<init>(SimpleGui.scala:52)
+	at ru.sayn.simple_gui.SimpleGui$.rowSet(SimpleGui.scala:52)
+	at ru.sayn.simple_gui.SimpleGui$$anon$3.<init>(SimpleGui.scala:69)
+	at ru.sayn.simple_gui.SimpleGui$.participants$lzycompute(SimpleGui.scala:66)
+	at ru.sayn.simple_gui.SimpleGui$.participants(SimpleGui.scala:66)
+	at ru.sayn.simple_gui.SimpleGui$$anon$1.<init>(SimpleGui.scala:43)
+	at ru.sayn.simple_gui.SimpleGui$.ui$lzycompute(SimpleGui.scala:33)
+	at ru.sayn.simple_gui.SimpleGui$.ui(SimpleGui.scala:33)
+	at ru.sayn.simple_gui.SimpleGui$$anon$2.<init>(SimpleGui.scala:27)
+	at ru.sayn.simple_gui.SimpleGui$.top(SimpleGui.scala:25)
+	at ru.sayn.simple_gui.SimpleGui$.top(SimpleGui.scala:21)
+	at scala.swing.SimpleSwingApplication.startup(SimpleSwingApplication.scala:26)
+	at scala.swing.SwingApplication$$anonfun$main$1.apply$mcV$sp(SwingApplication.scala:7)
+	at scala.swing.Swing$$anon$10.run(Swing.scala:32)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:209)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:672)
+	at java.awt.EventQueue.access$400(EventQueue.java:81)
+	at java.awt.EventQueue$2.run(EventQueue.java:633)
+	at java.awt.EventQueue$2.run(EventQueue.java:631)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.AccessControlContext$1.doIntersectionPrivilege(AccessControlContext.java:87)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:642)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:269)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:184)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:174)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:169)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+[0m[[0mdebug[0m] [0m	Thread AWT-EventQueue-0 exited.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread AWT-Shutdown to terminate.[0m
+[0m[[31merror[0m] [0m(AWT-EventQueue-0) java.util.MissingResourceException: Can't find bundle for base name com/sun/rowset/RowSetResourceBundle, locale ru_RU[0m
+java.util.MissingResourceException: Can't find bundle for base name com/sun/rowset/RowSetResourceBundle, locale ru_RU
+	at java.util.ResourceBundle.throwMissingResourceException(ResourceBundle.java:1427)
+	at java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1250)
+	at java.util.ResourceBundle.getBundle(ResourceBundle.java:952)
+	at com.sun.rowset.JdbcRowSetResourceBundle.<init>(JdbcRowSetResourceBundle.java:88)
+	at com.sun.rowset.JdbcRowSetResourceBundle.getJdbcRowSetResourceBundle(JdbcRowSetResourceBundle.java:107)
+	at com.sun.rowset.JdbcRowSetImpl.<init>(JdbcRowSetImpl.java:125)
+	at ru.sayn.simple_gui.SimpleGui$$anon$5.<init>(SimpleGui.scala:52)
+	at ru.sayn.simple_gui.SimpleGui$.rowSet(SimpleGui.scala:52)
+	at ru.sayn.simple_gui.SimpleGui$$anon$3.<init>(SimpleGui.scala:69)
+	at ru.sayn.simple_gui.SimpleGui$.participants$lzycompute(SimpleGui.scala:66)
+	at ru.sayn.simple_gui.SimpleGui$.participants(SimpleGui.scala:66)
+	at ru.sayn.simple_gui.SimpleGui$.updateTables(SimpleGui.scala:49)
+	at ru.sayn.simple_gui.SimpleGui$$anon$1$$anon$6.actionPerformed(SimpleGui.scala:36)
+	at javax.swing.Timer.fireActionPerformed(Timer.java:291)
+	at javax.swing.Timer$DoPostEvent.run(Timer.java:221)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:209)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:672)
+	at java.awt.EventQueue.access$400(EventQueue.java:81)
+	at java.awt.EventQueue$2.run(EventQueue.java:633)
+	at java.awt.EventQueue$2.run(EventQueue.java:631)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.AccessControlContext$1.doIntersectionPrivilege(AccessControlContext.java:87)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:642)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:269)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:184)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:174)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:169)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+[0m[[0mdebug[0m] [0m	Thread AWT-Shutdown exited.[0m
+[0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
+[0m[[0mdebug[0m] [0mDisposing 1 top-level windows...[0m
+[0m[[0mdebug[0m] [0mWaiting 2 s to let AWT thread exit.[0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[AWT-Windows,6,run-main-group-3][0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[TimerQueue,5,system][0m
+[0m[[0mdebug[0m] [0mSandboxed run complete..[0m
+[0m[[0mdebug[0m] [0mExited with code 0[0m
